@@ -1706,6 +1706,10 @@ footer {
         padding: 75px 0;
     }
 
+    .menu-section {
+        padding: 48px 0;
+    }
+
     .intro-grid {
         gap: 25px;
     }
@@ -1717,23 +1721,56 @@ footer {
     }
 
     .menu-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
     }
 
     .food-photo {
-        height: 260px;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .food-body {
+        display: block;
+        padding: 7px;
+    }
+
+    .food-body h3 {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    .food-body p {
+        font-size: 7px;
+        line-height: 1.3;
+    }
+
+    .food-body strong {
+        display: block;
+        margin-top: 4px;
+        font-size: 10px;
+    }
+
+    .category-bar {
+        gap: 5px;
+        margin: 18px 0;
+    }
+
+    .cat {
+        padding: 8px 7px;
+        font-size: 7px;
     }
 
     .poster-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 5px;
     }
 
     .poster,
     .poster.tall {
         height: auto;
-
         max-height: none;
-
+        aspect-ratio: 1;
         grid-row: auto;
     }
 
